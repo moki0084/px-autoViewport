@@ -1,12 +1,11 @@
 + function () {
     var clearViewports = function () {
         var viewports = document.querySelectorAll('meta[name=viewport]'),
-            i;
-        for (i in viewports) {
-            if (viewports.hasOwnProperty(i)) {
+             i,
+            len = viewports.length;
+          for (i =0; i < len; i++) {
                 viewports[i].remove();
             }
-        }
     }
     var getContent = function () {
         var width = 640;
