@@ -1,9 +1,7 @@
 + function () {
     var clearViewports = function () {
-        var viewports = document.querySelectorAll('meta[name=viewport]'),
-             i,
-            len = viewports.length;
-          for (i =0; i < len; i++) {
+        var viewports = document.querySelectorAll('meta[name=viewport]';
+          for (var i =0, len = viewports.length; i < len; i++) {
                 viewports[i].remove();
             }
     }
