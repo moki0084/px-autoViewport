@@ -1,10 +1,11 @@
 + function () {
     var clearViewports = function () {
-        var viewports = document.querySelectorAll('meta[name=viewport]';
+        var viewports = document.querySelectorAll('meta[name=viewport]');
           for (var i =0, len = viewports.length; i < len; i++) {
                 viewports[i].remove();
             }
-    }
+    };
+    
     var getContent = function () {
         var width = 640;
         var content = 'width=' + width + ', user-scalable=no, target-densitydpi=device-dpi';
@@ -22,8 +23,7 @@
             }
         }
         return content
-
-    }
+    };
 
     var setViewport = function () {
         var meta = document.createElement("meta");
@@ -31,12 +31,12 @@
         meta.setAttribute("content", getContent());
         meta.id = 'viewport';
         document.querySelector("head").appendChild(meta);
-    }
+    };
 
     var resetViewport = function () {
         clearViewports();
         setViewport();
-    }
+    };
 
     var init = function () {
         resetViewport();
