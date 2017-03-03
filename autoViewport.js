@@ -20,7 +20,7 @@
                     content = 'width=' + width + ', minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi';
                 }
             } else {
-                content = 'width=' + width + ', target-densitydpi=device-dpi';
+                content = 'width=' + width + ', user-scalable=no, target-densitydpi=device-dpi';
             }
         }
         return content
